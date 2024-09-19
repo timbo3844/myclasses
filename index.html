@@ -1,76 +1,86 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Classes</title>
+    <title>My School Classes Website</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            color: #FFFFFF;
+            background: linear-gradient(45deg, #65350F, #FF6600, #960018);
             margin: 0;
             padding: 0;
-            background: linear-gradient(to bottom, #900D09, #FFA500, #65350F); /* Carmine to Orange to Caramel */
-            height: 100vh;
+            font-family: Arial, sans-serif;
         }
 
-        /* Top section for the page */
-        .top-section {
-            padding: 50px;
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #65350F;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            padding: 10px 0;
+            z-index: 999;
+        }
+
+        nav a {
+            padding: 15px 20px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #FF6600;
+        }
+
+        header {
+            background-color: #960018;
+            padding: 20px;
             text-align: center;
-            background: none; /* No solid color needed */
         }
 
         h1, p {
-            margin: 0;
-            padding: 10px;
+            color: white;
         }
 
-        /* General Links */
-        a {
-            color: #FFFFFF;
-            text-decoration: none;
-            font-weight: bold;
+        .content {
+            padding: 20px;
+            color: white;
         }
 
-        a:hover {
-            color: #FFA500; /* Orange */
-        }
-
-        /* Bottom section for content */
-        .bottom-section {
+        .class-section {
             padding: 50px;
+            margin: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
             text-align: center;
-            background: none; /* The gradient covers the entire body */
         }
 
-        /* List Styling */
-        ul {
-            list-style-type: none;
-            padding: 0;
+        .class-section h2 {
+            color: white;
         }
-
-        li {
-            margin: 15px 0;
-            font-size: 1.5em;
-        }
-
     </style>
 </head>
 <body>
-    <div class="top-section">
+    <nav>
+        <a href="#class1">Class 1</a>
+        <a href="#class2">Class 2</a>
+        <a href="#class3">Class 3</a>
+        <a href="#class4">Class 4</a>
+        <a href="#class5">Class 5</a>
+    </nav>
+
+    <header>
         <h1>Welcome to My School Classes Website</h1>
         <p>This website contains the list of classes I am taking. Click on a class to learn more about it!</p>
-    </div>
-    <div class="bottom-section">
-        <ul>
-            <li><a href="classes/class1.html">Class 1</a></li>
-            <li><a href="classes/class2.html">Class 2</a></li>
-            <li><a href="classes/class3.html">Class 3</a></li>
-            <li><a href="classes/class4.html">Class 4</a></li>
-            <li><a href="classes/class5.html">Class 5</a></li>
-        </ul>
-    </div>
-</body>
-</html>
+    </header>
+
+    <div class="content">
+        <div id="class1" class="class-section">
+            <h2>Class 1</h2>
+            <p>Details about Class 1.</p>
+        </div>
+        <div id="class2"
+
